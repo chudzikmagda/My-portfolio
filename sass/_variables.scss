@@ -1,0 +1,42 @@
+//colors
+$primaryColor:#ca4941;
+
+$secondaryColor:#1c2238;
+$secondaryColor-90:#33384c;
+$secondaryColor-80:#494e60;
+$secondaryColor-70:#606474;
+$secondaryColor-60:#777a88;
+
+$secondaryColor-20:#d2d3d7;
+$secondaryColor-10:#e8e9eb;
+
+$white:#fff;
+$black:#000;
+$lightGrey: #e6e6e6;
+
+$successColor:#7fc6b9;
+$successColorDark:#094c3f;
+
+// typography
+$fontFamilyBasic: 'Montserrat',
+sans-serif;
+$fontFamilyAdditional: 'Montserrat',
+sans-serif;
+$fontSizeBasic:1rem;
+$fontBold:600;
+
+//container
+$containerMaxWidth:1360px;
+
+//menu
+$navHeight:80px;
+
+//spacers
+$basicSpacer:1rem;
+// $projectPadding: $basicSpacer*3;
+
+//media queries breakpoints
+$smallMobile: 375px;
+$mobile: 768px;
+$desktop: 1024px;
+$largeDesktop: 1920px;

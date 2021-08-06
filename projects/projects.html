@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magda Chudzik - frontend developer, designer i fotograf.</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/favicon.svg" sizes="any" type="image/svg+xml">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJWXMWW283"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JJWXMWW283');
+    </script>
+    
+</head>
+
+<body>
+
+    <div class="oldbrowser">
+        <div class="oldbrowser__information">
+            <h1 class="oldbrowser__heading">Przepraszam, ale ta strona nie obsługuje Internet Explorera.</h1>
+            <p>Wybierz jedną z nowoczesnych i bezpiecznych przeglądarek z listy poniżej:</p>
+            <ul class="oldbrowser__list">
+                <li class="oldbrowser__list-item"><a href="https://www.google.com/chrome/" class="oldbrowser__link" target="_blank">Chrome</a></li>
+                <li class="oldbrowser__list-item"><a href="https://www.mozilla.org/en-US/firefox/new/" class="oldbrowser__link" target="_blank">Firefox</a></li>
+                <li class="oldbrowser__list-item"><a href="https://www.opera.com/" class="oldbrowser__link" target="_blank">Opera</a></li>
+                <li class="oldbrowser__list-item"><a href="https://www.microsoft.com/en-us/edge" class="oldbrowser__link" target="_blank">Edge</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="header">
+        <span class="logotype">
+            <a href="../index.html" class="logotype__homepage-link">M<span class="logotype__element">agda </span>Ch<span class="logotype__element">udzik</span></a> 
+        </span>
+
+        <button class="hamburger-icon">
+            <span class="hamburger-icon__item hamburger-icon__item--first"></span>
+            <span class="hamburger-icon__item hamburger-icon__item--second"></span>
+            <span class="hamburger-icon__item hamburger-icon__item--third"></span>
+        </button>
+
+        <div class="overlay"></div>
+
+        <nav class="menu">
+            <ul class="menu__items">
+                <li class="menu__item"><a href="../index.html#about" class="menu__link">Czym się zajmuję?</a></li>
+                <li class="menu__item"><a href="../projects/projects.html" class="menu__link">Projekty</a></li>
+                <li class="menu__item"><a href="../kontakt.html" class="menu__link">Kontakt</a></li>
+            </ul>
+
+            <div class="social-media">
+                <a href="https://github.com/chudzikm" class="social-media__link" target="_blank"><img src="../images/social-media/gh-icon.svg" alt="" class="social-media__icon"></a>
+                <a href="https://www.linkedin.com/in/magdalena-chudzik/" class="social-media__link" target="_blank"><img src="../images/social-media/li-icon.svg" alt="" class="social-media__icon"></a>
+                <a href="https://www.facebook.com/chudzikmagda" class="social-media__link" target="_blank"><img src="../images/social-media/fb-icon.svg" alt="" class="social-media__icon"></a>
+                <a href="https://www.instagram.com/chudzikmagda/" class="social-media__link" target="_blank"><img src="../images/social-media/insta-icon.svg" alt="" class="social-media__icon"></a>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="section section--grey section--filters">
+        <h1 class="heading">Zrealizowane projekty</h1>
+        <div class="filters">
+            <div class="filters__row">
+                <span class="filters__title">
+                    Filtruj wykorzystane technologie:
+                </span> 
+                <span class="filters__clearBtn">Usuń filtry</span>
+            </div>
+            <span class="technologies technologies--filters">
+                <picture class="technologies__img tooltip" data-content="Wordpress">
+                    <img src="../images/skills/wordpress-black.svg" class="technologies__icon technologies__icon--filters" data-filter="wordpress">
+                </picture>
+                <picture class="technologies__img tooltip" data-content="HTML">
+                    <img src="../images/skills/HTML-black.svg" class="technologies__icon technologies__icon--filters" data-filter="html">
+                </picture>
+                <picture class="technologies__img tooltip" data-content="CSS">
+                    <img src="../images/skills/CSS-black.svg" class="technologies__icon technologies__icon--filters" data-filter="css">
+                </picture>
+                <picture class="technologies__img tooltip" data-content="SASS">
+                    <img src="../images/skills/sass-black.svg" class="technologies__icon technologies__icon--filters" data-filter="sass">
+                </picture>
+                <picture class="technologies__img tooltip" data-content="BEM">
+                    <img src="../images/skills/bem-black.svg" class="technologies__icon technologies__icon--filters" data-filter="bem">
+                </picture>
+                <picture class="technologies__img tooltip" data-content="Bootstrap">
+                    <img src="../images/skills/bootstrap-black.svg" class="technologies__icon technologies__icon--filters" data-filter="bootstrap">
+                </picture>
+                <picture class="technologies__img tooltip" data-content="JavaScript">
+                    <img src="../images/skills/JS-black.svg" class="technologies__icon technologies__icon--filters" data-filter="js">
+                </picture>
+                <picture class="technologies__img tooltip" data-content="GSAP">
+                    <img src="../images/skills/gsap-black.svg" class="technologies__icon technologies__icon--filters" data-filter="gsap">
+                </picture>
+            </span>
+        </div>
+    </section>
+
+    <section class="section section--lightgrey projects-listing">
+        
+        <div class="projects-listing__item" data-usedTechnologies="wordpress js gsap bem html sass css">
+            <!-- <a href="http://" class="projects-listing__link"></a> -->
+            <div class="projects-listing__overlay">
+                <a href="project1.html" class="btn btn--primary-color btn--no-rotate projects-listing__cta">Sprawdź szczegóły</a>
+            </div>
+            <picture class="projects-listing__image-box">
+                <img src="../images/projects/workspace-of-tomorrow/listing.jpg" alt="" srcset="" class="projects-listing__image">
+            </picture>
+            <div class="projects-listing__description">
+                <span class="projects-listing__title">
+                    Workspace of Tomorrow
+                </span>
+                <span class="projects-listing__details">Strona internetowa „Workspace of tomorrow” skupia się na tym, jak będzie zmieniać się praca w biurze według Nowego Stylu – europejskiego lidera w branży wyposażenia biur.</span>
+            </div>
+        </div>
+
+        <div class="projects-listing__item" data-usedTechnologies="wordpress html css bootstrap js">
+            <div class="projects-listing__overlay">
+                <a href="project2.html" class="btn btn--primary-color btn--no-rotate projects-listing__cta">Sprawdź szczegóły</a>
+            </div>
+            <picture class="projects-listing__image-box">
+                <img src="../images/projects/portfolio-magda-chudzik/listing.jpg" alt="" srcset="" class="projects-listing__image">
+            </picture>
+            <div class="projects-listing__description">
+                <span class="projects-listing__title">
+                    Fotografia Magda Chudzik
+                </span>
+                <span class="projects-listing__details">Strona internetowa, która w atrakcyjny sposób pokazuje fotografie autorki, i przede wszystkim skupia uwagę odwiedzających na zdjęciach.</span>
+            </div>
+        </div>
+        <div class="projects-listing__item" data-usedTechnologies="html css sass bem js gsap">
+            <div class="projects-listing__overlay">
+                <a href="project3.html" class="btn btn--primary-color btn--no-rotate projects-listing__cta">Sprawdź szczegóły</a>
+            </div>
+            <picture class="projects-listing__image-box">
+                <img src="../images/projects/portfolio-frontend/listing.jpg" alt="" srcset="" class="projects-listing__image">
+            </picture>
+            <div class="projects-listing__description">
+                <span class="projects-listing__title">
+                   Portfolio developerskie
+                </span>
+                <span class="projects-listing__details">Strona internetowa, na której właśnie jesteś. Zobacz, jak powstawała i sprawdź więcej szczegółów.</span>
+            </div>
+        </div>
+        <div class="projects-listing__item" data-usedTechnologies="html css sass bem js">
+            <div class="projects-listing__overlay">
+                <a href="project4.html" class="btn btn--primary-color btn--no-rotate projects-listing__cta">Sprawdź szczegóły</a>
+            </div>
+            <picture class="projects-listing__image-box">
+                <img src="../images/projects/weather-app/listing.jpg" alt="" srcset="" class="projects-listing__image">
+            </picture>
+            <div class="projects-listing__description">
+                <span class="projects-listing__title">
+                    Aplikacja pogodowa
+                </span>
+                <span class="projects-listing__details">Strona internetowa „Sprawdź pogodę”, która umożliwa sprawdzenie bieżącej pogody oraz prognozy na kolejne 8-dni na podstawie nazwy miejscowości.</span>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="social-media social-media--footer">
+            <h6 class="social-media__heading">
+                Spotkasz mnie tutaj:
+            </h6>
+            <div class="social-media__icons-footer">
+                <a href="https://github.com/chudzikm" class="social-media__link social-media__link--sm" target="_blank">
+                    <img src="../images/social-media/gh-icon.svg" alt="Gitbub" class="social-media__icon">
+                </a>
+                <a href="https://www.linkedin.com/in/magdalena-chudzik/" class="social-media__link social-media__link--sm" target="_blank">
+                    <img src="../images/social-media/li-icon.svg" alt="Linkedin" class="social-media__icon">
+                </a>
+                <a href="https://www.facebook.com/chudzikmagda" class="social-media__link social-media__link--sm" target="_blank">
+                    <img src="../images/social-media/fb-icon.svg" alt="Facebook" class="social-media__icon">
+                </a>
+                <a href="https://www.instagram.com/chudzikmagda/" class="social-media__link social-media__link--sm" target="_blank">
+                    <img src="../images/social-media/insta-icon.svg" alt="Instagram" class="social-media__icon">
+                </a>
+            </div>
+        </div>
+         
+        <div class="footer__gotop">
+            Idź na górę
+        </div>
+
+        <span class="footer__copyright"> 
+            &#169; Copyright Magda Chudzik
+        </span>
+</footer>
+    <script src="../js/main.js"></script>
+    <script>
+        //oldbrowser --> Internet explorer
+        if(window.navigator.userAgent.indexOf('Trident') >=0){
+            document.querySelector('.oldbrowser').classList.add('oldbrowser--visible');
+            document.body.classList.add('oldbrowser__body');
+        }
+    </script>
+</body>
+</html>

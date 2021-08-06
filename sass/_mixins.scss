@@ -1,0 +1,36 @@
+@mixin flex($flexDirection:column, $justifyContent:center, $alignItems:center, $flexWrap:nowrap) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-wrap: $flexWrap;
+}
+
+@mixin navbarPadding {
+    padding: $basicSpacer;
+}
+
+@mixin basicTransition($element:all, $time:0.5s) {
+    transition: $element $time ease-out;
+}
+
+
+//media queries
+
+@mixin desktop {
+    @media (min-width: #{$desktop + 1}) and (max-width: #{$largeDesktop - 1}) {
+        @content;
+    }
+}
+
+@mixin desktopUp {
+    @media (min-width: #{$desktop + 1}) {
+        @content;
+    }
+}
+
+@mixin largeDesktop {
+    @media (min-width: #{$largeDesktop}) {
+        @content;
+    }
+}
