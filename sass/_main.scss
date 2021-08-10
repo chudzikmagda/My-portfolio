@@ -43,7 +43,6 @@ body {
     @include desktopUp {
         flex-direction: row;
         padding: $basicSpacer *4;
-        overflow: visible;
     }
 
     &--lightgrey {
@@ -56,7 +55,6 @@ body {
 
     &--welcome {
         height: calc(100vh - #{$navHeight});
-        // min-height: 100vh;
         min-height: auto;
         justify-content: center;
         background: url('/images/blob-primary-color.svg') center top, #151a2d;
@@ -69,6 +67,7 @@ body {
             height: 100vh;
             min-height: auto;
             padding-top: $navHeight;
+
         }
     }
 

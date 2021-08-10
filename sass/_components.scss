@@ -210,7 +210,7 @@
         font-size: 1.25rem;
 
         @include desktop {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         @include largeDesktop {
@@ -430,6 +430,10 @@
                 justify-content: flex-start;
             }
         }
+    }
+
+    &--welcome {
+        padding-bottom: 0;
     }
 }
 
