@@ -63,6 +63,10 @@ body {
         color: $white;
         text-align: center;
 
+        @include mobileHorizontal {
+            height: auto;
+        }
+
         @include desktopUp {
             height: 100vh;
             min-height: auto;

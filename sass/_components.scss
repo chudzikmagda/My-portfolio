@@ -245,19 +245,17 @@
     @include flex;
     width: 70%;
     height: 70%;
-    // background: url('/images/magdachudzik.jpg') no-repeat top left;
-    // border-radius: 100%;
-    // background-size: cover;
     margin: 2rem 0;
+
+    @include mobileHorizontal {
+        width: 30%;
+        height: 30%;
+        margin: 1rem 0;
+    }
 
     @include desktopUp {
         align-items: flex-end;
         margin: 0;
-    }
-
-    @include largeDesktop {
-        // width: 30vmin;
-        // height: 30vmin;
     }
 }
 
@@ -1453,9 +1451,11 @@
 
 .image-hero {
     width: 80%;
+    margin-top: 2rem;
 
     @include desktopUp {
         width: 90%;
+        margin-top: 0;
     }
 }
 

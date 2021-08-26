@@ -17,6 +17,12 @@
 
 //media queries
 
+@mixin mobileHorizontal {
+    @media (max-width: #{$desktop}) and (orientation:landscape) {
+        @content;
+    }
+}
+
 @mixin desktop {
     @media (min-width: #{$desktop + 1}) and (max-width: #{$largeDesktop - 1}) {
         @content;
