@@ -1053,7 +1053,7 @@
     padding: 1rem 0;
 
     @include desktopUp {
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         gap: 1rem;
         row-gap: 3rem;
         padding: 3rem 0;
