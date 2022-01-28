@@ -1,2 +1,8 @@
-# ignore ALL .ai files
+# ignore node_modules
+node_modules/
+#dist directory
+dist/
+#all .ai files
 *.ai
+# ignore production files
+dist/

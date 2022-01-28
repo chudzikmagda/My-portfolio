@@ -1,0 +1,414 @@
+//scrollbar
+
+body {
+	position: relative;
+
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: $secondaryColor;
+		background-color: #111;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $primaryColor;
+		border-radius: 5px;
+	}
+}
+
+// containers
+
+.header {
+	position: fixed;
+	@include flex($flexDirection: row, $justifyContent: space-between);
+	width: 100%;
+	height: $navHeight;
+	margin: 0 auto;
+	@include navbarPadding;
+	z-index: 1;
+
+	@include desktopUp {
+		padding: 0 $basicSpacer * 4;
+	}
+}
+
+.section {
+	@include flex($justifyContent: space-around);
+	height: auto;
+	padding: $basicSpacer * 2 $basicSpacer;
+	overflow: hidden;
+
+	@include desktopUp {
+		flex-direction: row;
+		padding: $basicSpacer * 4;
+	}
+
+	&--lightgrey {
+		background: $secondaryColor-10;
+	}
+
+	&--grey {
+		background: $secondaryColor-20;
+	}
+
+	&--welcome {
+		height: calc(100vh - #{$navHeight});
+		min-height: auto;
+		justify-content: center;
+		background: url("../images/blob-primary-color.svg") center top, #151a2d;
+		background-size: cover;
+		padding-top: $navHeight;
+		color: $white;
+		text-align: center;
+
+		@include mobileHorizontal {
+			height: auto;
+		}
+
+		@include desktopUp {
+			height: 100vh;
+			min-height: auto;
+			padding-top: $navHeight;
+		}
+	}
+
+	&--about {
+		align-items: flex-start;
+		height: 100%;
+		background: $secondaryColor;
+		color: $white;
+
+		@include desktopUp {
+			justify-content: center;
+		}
+	}
+
+	&--project {
+		background: $secondaryColor-10;
+
+		@include desktopUp {
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		&-welcome {
+			justify-content: space-between;
+			min-height: 100vh;
+			height: auto;
+			padding-bottom: 0;
+			padding-right: 0;
+		}
+
+		&-about {
+			align-items: stretch;
+			justify-content: space-between;
+			z-index: 2;
+		}
+	}
+
+	&--after-work {
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+	&--contact-form,
+	&--thank-you-page {
+		height: auto;
+		min-height: 100vh;
+		background: #151a2d;
+		padding-top: 6rem;
+		color: $white;
+		text-align: center;
+	}
+
+	&--thank-you-page {
+		flex-direction: column;
+	}
+
+	&--project-subpage {
+		&-welcome {
+			height: auto;
+			align-items: stretch;
+			padding-top: 6rem;
+			padding-bottom: 1rem;
+
+			@include desktopUp {
+				min-height: 100vh;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-top: 0;
+			}
+		}
+
+		&-details {
+			flex-direction: column;
+			padding: 0;
+
+			@include desktopUp {
+				padding-bottom: 4rem;
+			}
+		}
+	}
+
+	&--filters {
+		flex-direction: column;
+		padding-top: 6rem;
+		text-align: center;
+	}
+}
+
+.footer {
+	position: relative;
+	@include flex;
+	min-height: 30vh;
+	padding: $basicSpacer * 2 $basicSpacer;
+	background: url("../images/blob-primary-color.svg") center no-repeat,
+		$secondaryColor;
+	background-size: cover;
+	color: $white;
+
+	@include desktopUp {
+		min-height: 50vh;
+	}
+
+	&__copyright {
+		display: block;
+		width: 100%;
+		margin-top: 2rem;
+		font-size: 0.85rem;
+		text-align: center;
+		color: $secondaryColor-70;
+
+		@include desktopUp {
+			margin-top: 4rem;
+			font-size: 0.75rem;
+		}
+	}
+
+	&__gotop {
+		position: relative;
+		@include flex;
+		padding-top: 3.15rem;
+		margin: $basicSpacer * 2 0;
+		font-size: 0.75rem;
+		font-weight: $fontBold;
+		color: $primaryColor;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@include basicTransition($time: 0.5s);
+
+		@include desktopUp {
+			position: absolute;
+			top: 50%;
+			right: 5rem;
+			transform: translateY(-50%);
+			margin: 0;
+		}
+
+		&::before {
+			content: url(../images/bracets/arrow-next.svg);
+			position: absolute;
+			top: 0;
+			transform: rotate(270deg);
+
+			&:hover {
+				top: 10px;
+			}
+		}
+
+		&:hover {
+			cursor: pointer;
+			color: $white;
+
+			&::before {
+				animation: goToTopAnimation 0.6s infinite forwards linear;
+			}
+		}
+	}
+}
+
+@keyframes goToTopAnimation {
+	33% {
+		top: -5px;
+	}
+
+	66% {
+		top: 0;
+	}
+
+	100% {
+		top: 5px;
+	}
+}
+
+.container {
+	@include flex;
+	max-width: $containerMaxWidth;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+
+	@include desktopUp {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&--align-top {
+		@include desktopUp {
+			align-items: flex-start;
+		}
+	}
+
+	&--one-column {
+		flex-direction: column;
+	}
+}
+
+.col {
+	position: relative;
+	@include flex;
+	width: 100%;
+	overflow: hidden;
+
+	@include desktopUp {
+		width: 50%;
+		// flex: 1
+	}
+
+	&--grey {
+		background: $secondaryColor-20;
+	}
+
+	&--light-grey {
+		background: #dfe0e1;
+	}
+
+	&--fullheight {
+		overflow: hidden;
+		display: flex;
+		align-items: stretch;
+
+		@include desktopUp {
+			flex: 1;
+		}
+	}
+
+	&--align-left {
+		@include desktopUp {
+			align-items: flex-start;
+		}
+	}
+
+	&--align-right {
+		@include desktopUp {
+			align-items: flex-end;
+		}
+	}
+
+	&--align-center {
+		@include desktopUp {
+			align-items: center;
+		}
+	}
+
+	&--padding-right {
+		@include desktopUp {
+			padding-right: 3rem;
+		}
+	}
+
+	&--padding-left {
+		padding-left: $basicSpacer;
+
+		@include desktopUp {
+			padding-left: $basicSpacer * 4;
+		}
+	}
+
+	&--padding-mobile {
+		padding: $basicSpacer * 2 $basicSpacer;
+
+		@include desktopUp {
+			padding-left: $basicSpacer * 4;
+			padding-right: 3rem;
+		}
+	}
+
+	&--no-right-padding {
+		@include desktopUp {
+			width: calc(50% + #{4rem});
+		}
+	}
+
+	&--3-columns {
+		justify-content: flex-start;
+		width: 100%;
+		padding: $basicSpacer * 2 $basicSpacer;
+
+		@include desktopUp {
+			width: 33.3333%;
+		}
+
+		@include desktop {
+			padding: $basicSpacer * 2;
+		}
+
+		@include largeDesktop {
+			padding: $basicSpacer * 4;
+		}
+	}
+
+	&--secondary-color-90 {
+		background-color: $secondaryColor-90;
+	}
+
+	&--secondary-color-80 {
+		background-color: $secondaryColor-80;
+	}
+
+	&--secondary-color-70 {
+		background-color: $secondaryColor-70;
+	}
+
+	&--secondary-color-90,
+	&--secondary-color-80,
+	&--secondary-color-70 {
+		color: $white;
+	}
+}
+
+.row {
+	@include flex;
+	flex-wrap: wrap;
+	width: 100%;
+
+	@include desktopUp {
+		flex-direction: row;
+		align-items: stretch;
+	}
+
+	&--align-left {
+		justify-content: flex-start;
+	}
+
+	&--align-top {
+		align-items: flex-start;
+	}
+
+	&--order-mobile-reverse {
+		flex-direction: column-reverse;
+
+		@include desktopUp {
+			flex-direction: row;
+		}
+	}
+
+	&--margin-top {
+		@include desktopUp {
+			margin-top: 4rem;
+		}
+	}
+}
