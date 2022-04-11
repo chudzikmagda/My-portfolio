@@ -1,8 +1,11 @@
 # ignore node_modules
 node_modules/
+
 #dist directory
 dist/
+
 #all .ai files
 *.ai
-# ignore production files
-dist/
+
+#ignore Vs settings 
+.vscode/
