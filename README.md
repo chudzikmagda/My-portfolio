@@ -1,5 +1,10 @@
 # My-portfolio
 
-Check online --> https://frontend.magdachudzik.pl
+#### **Check online here** --> https://frontend.magdachudzik.pl
 
-Technology used: Vanilla JS, HTML, SASS, BEM, GSAP
+#### **Technology used:**
+
+Vanilla JS, HTML, SASS, BEM, GSAP, Webpack.
+<br>
+
+[![Frontend developer](/src/images/github/mockup.jpg)](https://frontend.magdachudzik.pl)
