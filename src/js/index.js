@@ -1,15 +1,37 @@
 import style from "./../sass/style.scss";
+import { createFocusTrap } from 'focus-trap'
 
 // menu
 const hamburgerIcon = document.querySelector(".hamburger-icon");
 const nav = document.querySelector(".menu");
+const header = document.querySelector(".header");
 const blurBox = document.querySelector(".overlay");
+let openMenu = false;
+const focusableElements = [...document.querySelectorAll('.hamburger-icon, nav>ul>li, nav>.social-media>a')]
+const focusTrap = createFocusTrap(header);
 
 hamburgerIcon.addEventListener("click", function () {
 	blurBox.classList.toggle("overlay--active");
 	hamburgerIcon.classList.toggle("hamburger-icon--active");
 	nav.classList.toggle("menu--active");
+	openMenu = !openMenu;
+	if (openMenu) {
+		focusableElements.forEach(item => {
+			if (!item.classList.contains('hamburger-icon')) {
+				item.setAttribute('tabindex', '1')
+			}
+		});
+		header.addEventListener('click', focusTrap.activate());
+	} else {
+		focusableElements.forEach(item => {
+			if (!item.classList.contains('hamburger-icon')) {
+				item.setAttribute('tabindex', '-1')
+			}
+		});
+		header.addEventListener('click', focusTrap.deactivate());
+	}
 });
+
 
 // scroll to the section
 const menuAnchors = document.querySelectorAll("[data-anchor]");
@@ -56,15 +78,23 @@ window.addEventListener("scroll", function (e) {
 //go to the top
 const goToTop = document.querySelector(".footer__gotop");
 
-goToTop.addEventListener("click", () => {
+const windowScrollToTop = () => {
 	window.scroll({
 		top: 0,
 		behavior: "smooth",
 	});
+}
+
+goToTop.addEventListener("click", windowScrollToTop);
+
+goToTop.addEventListener("keypress", (e) => {
+	if (e.key === 'Enter') {
+		goToTop.click();
+		windowScrollToTop;
+	}
 });
 
 //products listing page - filters
-
 const filters = document.querySelectorAll(".technologies__icon--filters");
 const projectsItems = document.querySelectorAll(".projects-listing__item");
 let numberOfActiveFIlters = 0;

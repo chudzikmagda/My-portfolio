@@ -85,7 +85,10 @@
 
 		<header class="header">
 			<span class="logotype">
-				<a href="../index.html" class="logotype__homepage-link"
+				<a
+					href="../index.html"
+					class="logotype__homepage-link"
+					tabindex="1"
 					>M<span class="logotype__element">agda </span>Ch<span
 						class="logotype__element"
 						>udzik</span
@@ -93,7 +96,7 @@
 				>
 			</span>
 
-			<button class="hamburger-icon">
+			<button class="hamburger-icon" tabindex="2">
 				<span
 					class="hamburger-icon__item hamburger-icon__item--first"
 				></span>
@@ -110,17 +113,28 @@
 			<nav class="menu">
 				<ul class="menu__items">
 					<li class="menu__item">
-						<a href="../index.html#about" class="menu__link"
+						<a
+							href="../index.html#about"
+							class="menu__link"
+							tabindex="-1"
 							>About me</a
 						>
 					</li>
 					<li class="menu__item">
-						<a href="../projects.html" class="menu__link"
+						<a
+							href="../projects.html"
+							class="menu__link"
+							tabindex="-1"
 							>Projects</a
 						>
 					</li>
 					<li class="menu__item">
-						<a href="../kontakt.html" class="menu__link">Contact</a>
+						<a
+							href="../kontakt.html"
+							class="menu__link"
+							tabindex="-1"
+							>Contact</a
+						>
 					</li>
 				</ul>
 
@@ -129,6 +143,7 @@
 						href="https://github.com/chudzikm"
 						class="social-media__link"
 						target="_blank"
+						tabindex="-1"
 						><img
 							src="../images/social-media/gh-icon.svg"
 							alt=""
@@ -138,6 +153,7 @@
 						href="https://www.linkedin.com/in/magdalena-chudzik/"
 						class="social-media__link"
 						target="_blank"
+						tabindex="-1"
 						><img
 							src="../images/social-media/li-icon.svg"
 							alt=""
@@ -147,6 +163,7 @@
 						href="https://www.facebook.com/chudzikmagda"
 						class="social-media__link"
 						target="_blank"
+						tabindex="-1"
 						><img
 							src="../images/social-media/fb-icon.svg"
 							alt=""
@@ -156,6 +173,7 @@
 						href="https://www.instagram.com/chudzikmagda/"
 						class="social-media__link"
 						target="_blank"
+						tabindex="-1"
 						><img
 							src="../images/social-media/insta-icon.svg"
 							alt=""
@@ -372,7 +390,7 @@
 				</div>
 			</div>
 
-			<div class="footer__gotop">Go to the top</div>
+			<div class="footer__gotop" tabindex="0">Go to the top</div>
 
 			<span class="footer__copyright">
 				&#169; Copyright Magda Chudzik

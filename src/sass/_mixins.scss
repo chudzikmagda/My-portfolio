@@ -44,3 +44,9 @@
 		@content;
 	}
 }
+
+@mixin focusState {
+	outline-offset: 2px;
+	outline: 2px solid $primaryColor;
+	border-radius: 4px;
+}
