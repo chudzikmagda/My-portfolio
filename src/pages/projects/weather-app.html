@@ -86,7 +86,7 @@
 		<header class="header">
 			<span class="logotype">
 				<a
-					href="index.html"
+					href="../index.html"
 					class="logotype__homepage-link"
 					tabindex="1"
 					>M<span class="logotype__element">agda </span>Ch<span
@@ -114,19 +114,25 @@
 				<ul class="menu__items">
 					<li class="menu__item">
 						<a
-							href="index.html#about"
+							href="../index.html#about"
 							class="menu__link"
 							tabindex="-1"
 							>About me</a
 						>
 					</li>
 					<li class="menu__item">
-						<a href="projects.html" class="menu__link" tabindex="-1"
+						<a
+							href="../projects.html"
+							class="menu__link"
+							tabindex="-1"
 							>Projects</a
 						>
 					</li>
 					<li class="menu__item">
-						<a href="contact.html" class="menu__link" tabindex="-1"
+						<a
+							href="../kontakt.html"
+							class="menu__link"
+							tabindex="-1"
 							>Contact</a
 						>
 					</li>
@@ -139,7 +145,7 @@
 						target="_blank"
 						tabindex="-1"
 						><img
-							src="images/social-media/gh-icon.svg"
+							src="../images/social-media/gh-icon.svg"
 							alt=""
 							class="social-media__icon"
 					/></a>
@@ -149,7 +155,7 @@
 						target="_blank"
 						tabindex="-1"
 						><img
-							src="images/social-media/li-icon.svg"
+							src="../images/social-media/li-icon.svg"
 							alt=""
 							class="social-media__icon"
 					/></a>
@@ -159,7 +165,7 @@
 						target="_blank"
 						tabindex="-1"
 						><img
-							src="images/social-media/fb-icon.svg"
+							src="../images/social-media/fb-icon.svg"
 							alt=""
 							class="social-media__icon"
 					/></a>
@@ -169,7 +175,7 @@
 						target="_blank"
 						tabindex="-1"
 						><img
-							src="images/social-media/insta-icon.svg"
+							src="../images/social-media/insta-icon.svg"
 							alt=""
 							class="social-media__icon"
 					/></a>
@@ -177,34 +183,160 @@
 			</nav>
 		</header>
 
-		<section class="section section--thank-you-page">
-			<div class="container container--one-column">
-				<div class="message message--success">
-					<picture class="message__icon">
-						<img src="images/success.svg" alt="" srcset="" />
-					</picture>
-					<h5 class="message__text">
-						Thank you for your message. I will answer as soon as
-						possible.
-					</h5>
+		<section class="section section--grey section--project-subpage-welcome">
+			<div class="col col--align-center col--padding-right">
+				<div class="content" data-gsap="right">
+					<div class="text">
+						<h1 class="heading">Weather App</h1>
+						<p class="lead">
+							Check the current weather as well as the forecast
+							for the next 16 days in a selected town by using
+							geolocation.
+						</p>
+					</div>
+				</div>
+				<a
+					href=""
+					class="next-section"
+					data-behavior="scrollToNextSection"
+				>
+					<img
+						src="../images/bracets/arrow-down-black.svg"
+						alt="arrow down"
+						class="arrow"
+						data-anchor="section-second"
+					/>
+				</a>
+			</div>
+			<div class="col col--no-right-padding">
+				<img
+					src="../images/projects/weather-app/mockup1.jpg"
+					alt=""
+					class="responsive-image"
+					data-gsap="left"
+				/>
+				<div class="check-online-btn">
+					<a
+						href="https://github.com/chudzikmagda/WeatherApp"
+						class="check-online-btn__link"
+						target="_blank"
+					>
+						Check on GitHub
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="section section--project-subpage-details section--grey"
+			data-content="section-second"
+		>
+			<div class="row row--order-mobile-reverse">
+				<div class="col col--fullheight col--light-grey">
+					<img
+						src="../images/projects/weather-app/mockup2.jpg"
+						alt=""
+						class="responsive-image responsive-image--auto-height"
+						data-gsap="right"
+					/>
+				</div>
+				<div class="col col--fullheight col--align-center">
+					<div class="project-details" data-gsap="left">
+						<h2 class="heading">The project range:</h2>
+						<p>UX/UI design (Figma), frontend development.</p>
+					</div>
 				</div>
 			</div>
 
-			<div class="container" data-gsap="top">
-				<div class="see-more">
-					<a
-						href="projects.html"
-						class="btn btn--primary-color btn--no-rotate btn--fullwidth"
-						>Back to the projects</a
-					>
+			<div class="row">
+				<div class="col col--fullheight col--align-center">
+					<div class="project-details" data-gsap="right">
+						<h2 class="heading">The technology stack:</h2>
+						<span class="technologies project__details">
+							<picture
+								class="tooltip tooltip--project"
+								data-content="Angular"
+							>
+								<img
+									src="../images/skills/angular-black.svg"
+									class="technologies__icon technologies__icon--project-subpage"
+								/>
+							</picture>
+							<picture
+								class="tooltip tooltip--project"
+								data-content="Typecript"
+							>
+								<img
+									src="../images/skills/typescript-black.svg"
+									class="technologies__icon technologies__icon--project-subpage"
+								/>
+							</picture>
+							<picture
+								class="tooltip tooltip--project"
+								data-content="HTML"
+							>
+								<img
+									src="../images/skills/HTML-black.svg"
+									class="technologies__icon technologies__icon--project-subpage"
+								/>
+							</picture>
+							<picture
+								class="tooltip tooltip--project"
+								data-content="CSS"
+							>
+								<img
+									src="../images/skills/CSS-black.svg"
+									class="technologies__icon technologies__icon--project-subpage"
+								/>
+							</picture>
+							<picture
+								class="tooltip tooltip--project"
+								data-content="SASS"
+							>
+								<img
+									src="../images/skills/sass-black.svg"
+									class="technologies__icon technologies__icon--project-subpage"
+								/>
+							</picture>
+							<picture
+								class="tooltip tooltip--project"
+								data-content="BEM"
+							>
+								<img
+									src="../images/skills/bem-black.svg"
+									class="technologies__icon technologies__icon--project-subpage"
+								/>
+							</picture>
+						</span>
+					</div>
 				</div>
+				<div class="col col--fullheight col--light-grey">
+					<img
+						src="../images/projects/weather-app/mockup3.jpg"
+						alt=""
+						class="responsive-image responsive-image--auto-height"
+						data-gsap="left"
+					/>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row row--margin-top" data-gsap="top">
+					<div class="see-more">
+						<a
+							href="https://github.com/chudzikmagda/WeatherApp"
+							class="btn btn--primary-color btn--no-rotate btn--fullwidth"
+							target="_blank"
+							>Sprawdź na Github</a
+						>
+					</div>
 
-				<div class="see-more see-more--lighter">
-					<a
-						href="index.html"
-						class="btn btn--primary-color btn--no-rotate btn--fullwidth"
-						>Back to the homepage</a
-					>
+					<div class="contact">
+						<a
+							href="../contact.html"
+							class="btn btn--dark-bright btn--no-rotate btn--fullwidth"
+							>Any questions?</a
+						>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -259,15 +391,13 @@
 					</a>
 				</div>
 			</div>
-			<!-- </div>
-        </div> -->
+
 			<div class="footer__gotop" tabindex="0">Go to the top</div>
 
 			<span class="footer__copyright">
 				&#169; Copyright Magda Chudzik
 			</span>
 		</footer>
-		<script src="js/main.js"></script>
 		<script>
 			//oldbrowser --> Internet explorer
 			if (window.navigator.userAgent.indexOf("Trident") >= 0) {

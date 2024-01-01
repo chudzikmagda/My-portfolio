@@ -20,7 +20,7 @@
 		<meta name="language" content="English" />
 		<meta name="author" content="Magda Chudzik" />
 		<title>
-			Magda Chudzik - frontend developer, web & graphicdesigner and
+			Magda Chudzik - frontend developer, web & graphic designer and
 			photographer.
 		</title>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -730,7 +730,10 @@
 							/>
 							<span class="skills__name">Angular</span>
 						</div>
-						<div class="skills__item tooltip" data-content="Basic">
+						<div
+							class="skills__item tooltip"
+							data-content="Intermediate"
+						>
 							<img
 								src="images/skills/react.svg"
 								class="skills__icon"
@@ -823,16 +826,6 @@
 							data-content="Intermediate"
 						>
 							<img
-								src="images/skills/vsc.svg"
-								class="skills__icon"
-							/>
-							<span class="skills__name">Visual Studio Code</span>
-						</div>
-						<div
-							class="skills__item tooltip"
-							data-content="Intermediate"
-						>
-							<img
 								src="images/skills/xampp.svg"
 								class="skills__icon"
 							/>
@@ -894,8 +887,133 @@
 		<section class="section section--project" data-content="projects">
 			<h2 class="heading heading--projects">Projects</h2>
 
-			<!-- project1 -->
+			<!-- photo portfolio -->
+			<div class="project">
+				<div class="col col--fullheight col--light-grey">
+					<img
+						src="images/projects/portfolio-magda-chudzik/listing.jpg"
+						alt=""
+						class="project__image responsive-image--auto-height"
+						data-gsap="top"
+					/>
+				</div>
 
+				<div class="col col--grey">
+					<div class="project__description" data-gsap="top">
+						<h6 class="project__title">Photographer's portfolio</h6>
+						<p class="project__paragraph">
+							The website shows the pictures in an attractive way
+							and focuses the visitors' attention on the author's
+							pics.
+						</p>
+						<span class="project__subtitle"
+							>The project range:</span
+						>
+						<span class="project__details"
+							>UI/UX design, frontend development, SEO.
+						</span>
+						<span class="project__subtitle"
+							>The technology stack:</span
+						>
+						<span class="technologies project__details">
+							<img
+								src="images/skills/react-black.svg"
+								class="technologies__icon"
+							/>
+							<img
+								src="images/skills/typescript-black.svg"
+								class="technologies__icon"
+							/>
+							<img
+								src="images/skills/sass-black.svg"
+								class="technologies__icon"
+							/>
+						</span>
+						<span class="project__subtitle"
+							>Date of implementation:</span
+						>
+						<span class="project__details">2023</span>
+						<div class="project__links">
+							<a
+								href="projects/photo-portfolio.html"
+								class="btn btn--project-primary btn--no-rotate"
+								>Check the details</a
+							>
+							<a
+								href="https://magdachudzik.pl"
+								class="btn btn--project-black btn--no-rotate btn--margin-left"
+								target="_blank"
+								>Check online</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- bookworm -->
+			<div class="project">
+				<div class="col col--fullheight col--light-grey">
+					<img
+						src="images/projects/bookworm/listing.jpg"
+						alt=""
+						class="project__image responsive-image--auto-height"
+						data-gsap="top"
+					/>
+				</div>
+
+				<div class="col col--grey">
+					<div class="project__description" data-gsap="top">
+						<h6 class="project__title">Bookworm</h6>
+						<p class="project__paragraph">
+							Angular standalone application that helps the users
+							collect and manage data about the books they have
+							read.
+						</p>
+						<span class="project__subtitle"
+							>The project range:</span
+						>
+						<span class="project__details"
+							>UI/UX design, frontend development.
+						</span>
+						<span class="project__subtitle"
+							>The technology stack:</span
+						>
+						<span class="technologies project__details">
+							<img
+								src="images/skills/angular-black.svg"
+								class="technologies__icon"
+							/>
+							<img
+								src="images/skills/typescript-black.svg"
+								class="technologies__icon"
+							/>
+							<img
+								src="images/skills/sass-black.svg"
+								class="technologies__icon"
+							/>
+						</span>
+						<span class="project__subtitle"
+							>Date of implementation:</span
+						>
+						<span class="project__details">2022</span>
+						<div class="project__links">
+							<a
+								href="projects/bookworm.html"
+								class="btn btn--project-primary btn--no-rotate"
+								>Check the details</a
+							>
+							<a
+								href="https://github.com/chudzikmagda/Bookworm-Angular"
+								class="btn btn--project-black btn--no-rotate btn--margin-left"
+								target="_blank"
+								>Check on Github</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- workspace -->
 			<div class="project project--mobile-order-reverse">
 				<div class="col col--grey">
 					<div class="project__description" data-gsap="top">
@@ -952,7 +1070,7 @@
 						<span class="project__details">2021</span>
 						<div class="project__links">
 							<a
-								href="projects/project1.html"
+								href="projects/workspace-of-tomorrow.html"
 								class="btn btn--project-primary btn--no-rotate"
 								>Check the details</a
 							>
@@ -976,78 +1094,8 @@
 					/>
 				</div>
 			</div>
-			<!-- end of project -->
 
-			<!-- project2 -->
-			<div class="project">
-				<div class="col col--fullheight col--light-grey">
-					<img
-						src="images/projects/portfolio-magda-chudzik/listing.jpg"
-						alt=""
-						class="project__image responsive-image--auto-height"
-						data-gsap="top"
-					/>
-				</div>
-
-				<div class="col col--grey">
-					<div class="project__description" data-gsap="top">
-						<h6 class="project__title">Photographer's portfolio</h6>
-						<p class="project__paragraph">
-							The website shows the pictures in an attractive way
-							and focuses the visitors' attention on the author's
-							pics.
-						</p>
-						<span class="project__subtitle"
-							>The project range:</span
-						>
-						<span class="project__details"
-							>Layout design (Adobe Photoshop), frontend
-							development, Wordpress theme implementation, SEO.
-						</span>
-						<span class="project__subtitle"
-							>The technology stack:</span
-						>
-						<span class="technologies project__details">
-							<img
-								src="images/skills/wordpress-black.svg"
-								class="technologies__icon"
-							/>
-							<img
-								src="images/skills/HTML-black.svg"
-								class="technologies__icon"
-							/>
-							<img
-								src="images/skills/CSS-black.svg"
-								class="technologies__icon"
-							/>
-							<img
-								src="images/skills/JS-black.svg"
-								class="technologies__icon"
-							/>
-						</span>
-						<span class="project__subtitle"
-							>Date of implementation:</span
-						>
-						<span class="project__details">2020</span>
-						<div class="project__links">
-							<a
-								href="projects/project2.html"
-								class="btn btn--project-primary btn--no-rotate"
-								>Check the details</a
-							>
-							<a
-								href="https://magdachudzik.pl"
-								class="btn btn--project-black btn--no-rotate btn--margin-left"
-								target="_blank"
-								>Check online</a
-							>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- project4 -->
-
+			<!-- weather-app -->
 			<div class="project project--mobile-order-reverse">
 				<div class="col col--grey">
 					<div class="project__description" data-gsap="top">
@@ -1098,7 +1146,7 @@
 						<span class="project__details">2021</span>
 						<div class="project__links">
 							<a
-								href="projects/project4.html"
+								href="projects/weather-app.html"
 								class="btn btn--project-primary btn--no-rotate"
 								>Check the details</a
 							>
@@ -1121,10 +1169,8 @@
 					/>
 				</div>
 			</div>
-			<!-- end of project -->
 
-			<!-- project3 -->
-
+			<!-- front-end-portfolio -->
 			<div class="project">
 				<div class="col col--fullheight col--light-grey">
 					<img
@@ -1185,7 +1231,7 @@
 						<span class="project__details">2021</span>
 						<div class="project__links">
 							<a
-								href="projects/project3.html"
+								href="projects/front-end-portfolio.html"
 								class="btn btn--project-primary btn--no-rotate"
 								>Check the details</a
 							>
@@ -1193,7 +1239,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- end of project -->
+			<!-- end of projects -->
 
 			<!-- cta    -->
 			<div class="container" data-gsap="top">
@@ -1231,9 +1277,6 @@
 							a self-taught and I want to develop my current
 							skills and gain new ones in the future. Each day, I
 							try to find at least a moment for writing a code.
-							Lately, I have focused on learning some advanced
-							aspects of Javascript and the basics of TypeScript
-							and Angular.
 						</p>
 					</div>
 				</div>
@@ -1253,8 +1296,7 @@
 							pieces, I work with light and clear forms, vesting
 							my photos with a dose of nostalgia. My vision of the
 							world has been recognized in many photography
-							contests, both Polish and international. If you are
-							interested in...
+							contests.
 						</p>
 						<a
 							href="https://magdachudzik.pl"
@@ -1275,11 +1317,9 @@
 						<p class="card__description">
 							I’m a fan of minimalism, geometry and clean design.
 							I comprehensively design materials for the Internet
-							and for printing, from the Google Adwords or social
-							media campaigns to the large-format ads. My
-							experience, gained while working for various brands
-							and trades, makes me ready for each and every
-							challenge.
+							and for printing. My experience, gained while
+							working for various brands and trades, makes me
+							ready for each and every challenge.
 						</p>
 					</div>
 				</div>

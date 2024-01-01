@@ -64,26 +64,32 @@ const config = {
 		}),
 
 		new HtmlWebpackPlugin({
-			template: "src/pages/projects/project1.html",
-			filename: "projects/project1.html",
+			template: "src/pages/projects/workspace-of-tomorrow.html",
+			filename: "projects/workspace-of-tomorrow.html",
 			inject: "body",
 		}),
 
 		new HtmlWebpackPlugin({
-			template: "src/pages/projects/project2.html",
-			filename: "projects/project2.html",
+			template: "src/pages/projects/photo-portfolio.html",
+			filename: "projects/photo-portfolio.html",
 			inject: "body",
 		}),
 
 		new HtmlWebpackPlugin({
-			template: "src/pages/projects/project3.html",
-			filename: "projects/project3.html",
+			template: "src/pages/projects/front-end-portfolio.html",
+			filename: "projects/front-end-portfolio.html",
 			inject: "body",
 		}),
 
 		new HtmlWebpackPlugin({
-			template: "src/pages/projects/project4.html",
-			filename: "projects/project4.html",
+			template: "src/pages/projects/weather-app.html",
+			filename: "projects/weather-app.html",
+			inject: "body",
+		}),
+
+		new HtmlWebpackPlugin({
+			template: "src/pages/projects/bookworm.html",
+			filename: "projects/bookworm.html",
 			inject: "body",
 		}),
 
@@ -121,7 +127,7 @@ const config = {
 			},
 		}),
 		new MiniCssExtractPlugin({
-			filename: '[name].[hash:8].css'
+			filename: "[name].[hash:8].css",
 		}),
 	],
 	stats: {
@@ -133,13 +139,13 @@ const config = {
 			new TerserPlugin(),
 			new ImageMinimizerPlugin({
 				minimizer: {
-				  implementation: ImageMinimizerPlugin.imageminMinify,
-				  options: {
-					plugins: [
-					  ["jpegtran", { progressive: true }],
-					  ["optipng", { optimizationLevel: 5 }],
-					],
-				  },
+					implementation: ImageMinimizerPlugin.imageminMinify,
+					options: {
+						plugins: [
+							["jpegtran", { progressive: true }],
+							["optipng", { optimizationLevel: 5 }],
+						],
+					},
 				},
 			}),
 			new HtmlMinimizerPlugin(),

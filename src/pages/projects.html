@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="title"
-			content="Magda Chudzik - junior frontend developer, web designer, photographer"
+			content="Magda Chudzik - frontend developer, web designer, photographer"
 		/>
 		<meta
 			name="description"
@@ -20,7 +20,7 @@
 		<meta name="language" content="English" />
 		<meta name="author" content="Magda Chudzik" />
 		<title>
-			Magda Chudzik - junior frontend developer, web & graphicdesigner and
+			Magda Chudzik - frontend developer, web & graphic designer and
 			photographer.
 		</title>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -189,12 +189,22 @@
 				<span class="technologies technologies--filters">
 					<picture
 						class="technologies__img tooltip"
-						data-content="JavaScript"
+						data-content="Angular"
 					>
 						<img
-							src="images/skills/JS-black.svg"
+							src="images/skills/angular-black.svg"
 							class="technologies__icon technologies__icon--filters"
-							data-filter="js"
+							data-filter="angular"
+						/>
+					</picture>
+					<picture
+						class="technologies__img tooltip"
+						data-content="React"
+					>
+						<img
+							src="images/skills/react-black.svg"
+							class="technologies__icon technologies__icon--filters"
+							data-filter="react"
 						/>
 					</picture>
 					<picture
@@ -205,16 +215,6 @@
 							src="images/skills/typescript-black.svg"
 							class="technologies__icon technologies__icon--filters"
 							data-filter="ts"
-						/>
-					</picture>
-					<picture
-						class="technologies__img tooltip"
-						data-content="Angular"
-					>
-						<img
-							src="images/skills/angular-black.svg"
-							class="technologies__icon technologies__icon--filters"
-							data-filter="angular"
 						/>
 					</picture>
 					<picture
@@ -284,11 +284,69 @@
 		<section class="section section--lightgrey projects-listing">
 			<div
 				class="projects-listing__item"
+				data-usedTechnologies="react ts html css sass bem"
+			>
+				<div class="projects-listing__overlay">
+					<a
+						href="projects/photo-portfolio.html"
+						class="btn btn--primary-color btn--no-rotate projects-listing__cta"
+						>Check the details</a
+					>
+				</div>
+				<picture class="projects-listing__image-box">
+					<img
+						src="images/projects/portfolio-magda-chudzik/listing.jpg"
+						alt=""
+						srcset=""
+						class="projects-listing__image"
+					/>
+				</picture>
+				<div class="projects-listing__description">
+					<span class="projects-listing__title">
+						Photographer's portfolio
+					</span>
+					<span class="projects-listing__details"
+						>The website shows the pictures in an attractive way and
+						focuses the visitors' attention on the author's pics.
+					</span>
+				</div>
+			</div>
+
+			<div
+				class="projects-listing__item"
+				data-usedTechnologies="angular ts html css sass bem"
+			>
+				<div class="projects-listing__overlay">
+					<a
+						href="projects/bookworm.html"
+						class="btn btn--primary-color btn--no-rotate projects-listing__cta"
+						>Check the details</a
+					>
+				</div>
+				<picture class="projects-listing__image-box">
+					<img
+						src="images/projects/bookworm/listing.jpg"
+						alt=""
+						srcset=""
+						class="projects-listing__image"
+					/>
+				</picture>
+				<div class="projects-listing__description">
+					<span class="projects-listing__title"> Bookworm </span>
+					<span class="projects-listing__details"
+						>Angular standalone application that helps the users
+						collect and manage data about the books they have read.
+					</span>
+				</div>
+			</div>
+
+			<div
+				class="projects-listing__item"
 				data-usedTechnologies="wordpress js gsap bem html sass css"
 			>
 				<div class="projects-listing__overlay">
 					<a
-						href="projects/project1.html"
+						href="projects/workspace-of-tomorrow.html"
 						class="btn btn--primary-color btn--no-rotate projects-listing__cta"
 						>Check the details</a
 					>
@@ -316,40 +374,11 @@
 
 			<div
 				class="projects-listing__item"
-				data-usedTechnologies="wordpress html css js"
-			>
-				<div class="projects-listing__overlay">
-					<a
-						href="projects/project2.html"
-						class="btn btn--primary-color btn--no-rotate projects-listing__cta"
-						>Check the details</a
-					>
-				</div>
-				<picture class="projects-listing__image-box">
-					<img
-						src="images/projects/portfolio-magda-chudzik/listing.jpg"
-						alt=""
-						srcset=""
-						class="projects-listing__image"
-					/>
-				</picture>
-				<div class="projects-listing__description">
-					<span class="projects-listing__title">
-						Photographer's portfolio
-					</span>
-					<span class="projects-listing__details"
-						>The website shows the pictures in an attractive way and
-						focuses the visitors' attention on the author's pics.
-					</span>
-				</div>
-			</div>
-			<div
-				class="projects-listing__item"
 				data-usedTechnologies="html css sass bem js gsap"
 			>
 				<div class="projects-listing__overlay">
 					<a
-						href="projects/project3.html"
+						href="projects/front-end-portfolio.html"
 						class="btn btn--primary-color btn--no-rotate projects-listing__cta"
 						>Check the details</a
 					>
@@ -378,7 +407,7 @@
 			>
 				<div class="projects-listing__overlay">
 					<a
-						href="projects/project4.html"
+						href="projects/weather-app.html"
 						class="btn btn--primary-color btn--no-rotate projects-listing__cta"
 						>Check the details</a
 					>
