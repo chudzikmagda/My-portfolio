@@ -40,49 +40,6 @@
 	</head>
 
 	<body>
-		<div class="oldbrowser">
-			<div class="oldbrowser__information">
-				<p class="oldbrowser__heading">
-					Sorry, this page doesn't support Internet Explorer.
-				</p>
-				<p>Choose one of the modern browsers from the list below:</p>
-				<ul class="oldbrowser__list">
-					<li class="oldbrowser__list-item">
-						<a
-							href="https://www.google.com/chrome/"
-							class="oldbrowser__link"
-							target="_blank"
-							>Chrome</a
-						>
-					</li>
-					<li class="oldbrowser__list-item">
-						<a
-							href="https://www.mozilla.org/en-US/firefox/new/"
-							class="oldbrowser__link"
-							target="_blank"
-							>Firefox</a
-						>
-					</li>
-					<li class="oldbrowser__list-item">
-						<a
-							href="https://www.opera.com/"
-							class="oldbrowser__link"
-							target="_blank"
-							>Opera</a
-						>
-					</li>
-					<li class="oldbrowser__list-item">
-						<a
-							href="https://www.microsoft.com/en-us/edge"
-							class="oldbrowser__link"
-							target="_blank"
-							>Edge</a
-						>
-					</li>
-				</ul>
-			</div>
-		</div>
-
 		<header class="header">
 			<span class="logotype">
 				<a
@@ -283,14 +240,5 @@
 				&#169; Copyright Magda Chudzik
 			</span>
 		</footer>
-		<script>
-			//oldbrowser --> Internet explorer
-			if (window.navigator.userAgent.indexOf("Trident") >= 0) {
-				document
-					.querySelector(".oldbrowser")
-					.classList.add("oldbrowser--visible");
-				document.body.classList.add("oldbrowser__body");
-			}
-		</script>
 	</body>
 </html>
