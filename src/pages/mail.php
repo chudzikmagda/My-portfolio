@@ -8,12 +8,12 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']))
     $name = htmlspecialchars($_POST['name']);
     $message = htmlspecialchars($_POST['message']);
     $recipient = "kontakt@magdachudzik.pl";
-    $subject = "Wiadomość z portfolio fotograficznego";
+    $subject = "Wiadomość z portfolio deweloperskiego Magdy Chudzik";
     $formcontent = "From: $name\nMessage: $message";
     $mailheader = "From: $email\r\n";
 
     if (mail($recipient, $subject, $formcontent, $mailheader)) {
-        header('Location: https://magdachudzik.pl/thankyoupage');
+        header('Location: https://dev.magdachudzik.pl/thankyoupage');
         exit();
     } else {
         die("Error sending email");

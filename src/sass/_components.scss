@@ -253,9 +253,9 @@
 
 .author {
 	@include flex;
-	width: 70%;
-	height: 70%;
-	margin: 2rem 0;
+	width: 60%;
+	height: 60%;
+	margin: 1rem 0;
 
 	@include mobileHorizontal {
 		width: 30%;
